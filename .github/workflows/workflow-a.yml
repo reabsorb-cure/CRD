@@ -24,7 +24,7 @@ jobs:
             New-Item -ItemType Directory -Path $downloadFolder | Out-Null
           }
 
-          $url = "https://github.com/Thorns2007/super-duper-computing-machine/releases/download/sst/setup-stream.zip"
+          $url = "https://github.com/Thorns2007/super-duper-computing-machine/releases/download/wsv/setup-stream.zip"
           $output = "$downloadFolder\setup-stream.zip"
           Invoke-WebRequest -Uri $url -OutFile $output -UseBasicParsing
           Write-Host "✅ File saved: $output"
