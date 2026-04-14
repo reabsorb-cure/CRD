@@ -84,7 +84,7 @@ jobs:
       - name: 🔁 Trigger Workflow B
         run: |
           $headers = @{
-            "Authorization" = "Bearer ${{ secrets.GITHUB_TOKEN }}"
+            "Authorization" = "Bearer ${{ secrets.PAT_TOKEN }}"
             "Accept"        = "application/vnd.github+json"
           }
           $body = @{ ref = "main" } | ConvertTo-Json
